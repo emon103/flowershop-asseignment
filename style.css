@@ -1,4 +1,8 @@
 /*primary styles*/
+section{
+    max-width: 90%;
+    margin: 0 auto;
+}
 .primarybutton{
     color: #FFF;
     font-family: Lato;
@@ -30,6 +34,8 @@
 }
 .banner{
     padding:20px;
+    max-width: 90%;
+    margin: 0 auto;
     display:flex;
     align-items: center;
     justify-content: space-between;
@@ -49,10 +55,6 @@
 }
 /*main section styles*/
 /*featured-flower section*/
-
-.featured-flower{
-    max-width:100%;
-}
 .featured-flower-description{
     color: rgba(39, 39, 39, 0.60);
     text-align: center;
@@ -64,7 +66,10 @@
     text-align: center;
     display:flex;
     border-radius: 300px 300px 0px 0px;
-background: rgba(5, 151, 160, 0.15);
+    background: rgba(5, 151, 160, 0.15);
+    justify-content: center;
+    gap: 30px;
+    padding: 50px 0;
 }
 .image-caption{
     text-align:center;
@@ -74,15 +79,22 @@ background: rgba(5, 151, 160, 0.15);
 }
 .featured-image{
     width: 200px;
-height: 200px;
-flex-shrink: 0;
-border-radius: 300px 300px 0px 0px;
-background: rgba(5, 151, 160, 0.15);
+    height: 200px;
+    flex-shrink: 0;
+    border-radius: 300px 300px 0px 0px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 300px 300px 0px 0px;
+    background: rgba(5, 151, 160, 0.15);
+}
+.featured-image img {
+    max-width: 80%;
+    max-height: 80%;
 }
 /* hot deal section*/
 .hot-deals{
     display:flex;
-    max-width: 1122px;
+    margin: 0 auto;
     height: 620px;
     flex-shrink: 0;
     border-radius: 8px;
@@ -99,11 +111,9 @@ background: rgba(5, 151, 160, 0.15);
 }
 
 .hotdeal-description{
-    color: rgba(39, 39, 39, 0.60);
     text-align: center;
-    font-family: Lato;
+    color: rgba(39, 39, 39, 0.60);
     font-size: 18px;
-    font-style: normal;
     font-weight: 400;
     line-height: 30px; /* 166.667% */
 }
@@ -117,12 +127,17 @@ background: rgba(5, 151, 160, 0.15);
 .instagram{
    margin-top: 0px; 
 }
+.insta_img_container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
 .insta-description{
     color: rgba(39, 39, 39, 0.60);
-text-align: center;
-font-size: 18px;
-font-weight: 400;
-line-height: 30px; /* 166.667% */
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px; /* 166.667% */
 }
 .intsa-images{
     width: 242px;
@@ -150,7 +165,11 @@ latest-deal-content{
     margin-bottom: px;
     
 }
+.latest-deal{
+    background-image: url('Rectangle 9.png');
+}
 .form{
+    
     justify-content:center;
     display: flex;
     align-items: center;
